@@ -1,0 +1,523 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Restorant</title>
+
+    <!-- CSS only -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.8.2/font/bootstrap-icons.css">
+   
+   <style>
+      .body{
+        margin: 0;
+        padding:0;
+        border: 0;
+        font-family: 'tahoma' sans-serif;
+        font-size: 14px;
+        color: rgb(17, 16, 16);
+        background: rgb(155, 152, 152);
+        box-sizing: border-box;
+      }
+      .h1, h2, h4{
+        margin: 0;
+      }
+      .p{
+        margin: 0;
+      }
+      .conteiner{
+        width: 80%;
+
+        margin: 0 auto;
+      }
+
+      .header{
+        width: 80%;
+        position: absolute;
+        top: 0;
+        left: 0;
+      }
+
+      .header-iner{
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding: 35px 0;
+        
+      }
+      .nav{
+        font-size: 20px;
+        text-transform: uppercase;
+      }
+
+      .nav li{
+        display: inline-block;
+        color:rgb(255, 255, 255);
+        text-decoration: none;
+        margin-left: 50px;
+      }
+      .nav li a{
+        padding: 8px 0;
+        text-decoration: none;
+       
+        border-bottom: 2px transparent;
+        color:rgb(255, 255, 255);
+      }
+      .nav li a:hover{
+        border-bottom: 2px solid #da5c2a;
+  
+      }
+      
+      .img{
+      display:flex;
+      flex-direction: column;
+      justify-content: center;
+      padding-top: 80 px;
+      height: 900px;
+      background:linear-gradient(rgba(0,0,0,0.6),rgba(0,0,0,0.6)),url("https://www.grocerygazette.co.uk/wp-content/uploads/2022/04/iftar.jpg");
+      background-size: cover;
+      }
+
+      .img-iner{
+        margin: 0 auto;
+        text-align:left;
+      }
+
+      .img-titel{
+        font-size: 45px;
+        color: white;
+        text-transform: uppercase;
+        margin-bottom: 15px;
+      }
+      .btn{
+        display: inline-block;
+        text-decoration: none;
+        border-radius: 200px;
+        padding: 10px 30px;
+      }
+      .btn-full{
+        background-color: #da5c2a;
+        border: 1px solid #da5c2a;
+        color: white;
+        margin-right: 15px;
+      }
+      .btn-ghost{
+        border: 1px solid #da5c2a;
+        color: #da5c2a;
+      }
+      .btn-full:hover{
+        background-color: #eba952;
+      }
+      .btn-ghost:hover{
+        color: white;
+        background-color: #db450a;
+      }
+  
+      .section-meal{
+        padding: 0;
+      }
+      .meal-showcase{
+        width: 100%;
+        list-style: none;
+      }
+      .meal-showcase li{
+        float: left;
+        display: block;
+        width: 25%;
+      }
+      .meal-photo{
+        width: 100%;
+        background-color: black;
+        overflow: hidden;
+      }
+      .meal-photo img{
+        opacity: 0,7;
+        width: 100%;
+       height: auto;
+      -webkit-transform: scale(1.15);
+      -ms-transform: scale(1.15);
+      transform: scale(1.15);
+      -webkit-transition: webkit-transform 0.5s,opacity 0.5s;
+      transition: transform 0.5s, opacity 0.5s;
+     }
+     .meal-photo img:hover{
+      opacity: 1;
+      width: 100%;
+      height: auto;
+      -webkit-transform: scale(1.03);
+      -ms-transform: scale(1.03);
+     transform: scale(1.03);
+      -webkit-transition: webkit-transform 0.5s,opacity 0.5s;
+      transition: transform 0.5s, opacity 0.5s;
+      }
+
+      .img2{
+      display:flex;
+      flex-direction: column;
+      position: sticky;
+      padding-top: 50px;
+      height: 700px;
+      background:linear-gradient(rgba(0,0,0,0.6),rgba(0,0,0,0.6)),url("http://www.zenasamja.me/images/0130/pizza-v.jpg");
+      background-size: cover;
+      }
+    </style>
+</head>
+<body>
+  <header class="header">
+    <section class="container py-3 my-5">
+      <div class="header-iner">
+      <div class="header-logo">
+        
+      </div>
+        <nav class="nav">
+          <li><a href="#" class="nav-link">food delivery</a></li>
+          <li><a href="#" class="nav-link">how it works</a></li>
+          <li><a href="#" class="nav-link">our cities</a></li>
+          <li><a href="#" class="nav-link">sing up</a></li>
+      </div>
+    </div>
+  </header>
+    <div class="img">
+      <div class="conteiner">
+        <div class="img-iner">
+        <h1 class="img-titel">goodbye junk food</h1>
+        <h1 class="img-titel">hello super healtny meals</h1>
+        </div>
+        <a href="#" class="btn btn-full">i'm hungry</a>
+        <a href="#" class="btn btn-ghost">show me more</a>
+       
+      </div>
+    </div> 
+</section>
+<section class="container p-3 my-5">
+<div class="p-2">
+  <div class="row">
+  <h2 class="text-muted text-uppercase text-center fs-2 py-3">get food fast - not fast food</h2>
+  <p class="-item text-warning text-center p-3">__________________</p>
+  <div class="box ease-out text-left"></div>
+  <p class="text-muted fw-lighter fs-4 lh-2 text-center"> Hello,we're Omnifood,your new premium food delivery service.We know you're always <br> No time for cooking. So let us take care of that,we're really good at it,we promise</p>
+  </div>
+</div>
+</section>
+
+<section class="container d-block p-5" style="width: 100%">
+  <div >
+    <div class="row">
+      <div class="col-lg-3 py-2">
+        <svg class="text-warning" xmlns="http://www.w3.org/2000/svg" width="40" height="40" fill="currentColor" class="bi bi-infinity" viewBox="0 0 16 16">
+        <path d="M5.68 5.792 7.345 7.75 5.681 9.708a2.75 2.75 0 1 1 0-3.916ZM8 6.978 6.416 5.113l-.014-.015a3.75 3.75 0 1 0 0 5.304l.014-.015L8 8.522l1.584 1.865.014.015a3.75 3.75 0 1 0 0-5.304l-.014.015L8 6.978Zm.656.772 1.663-1.958a2.75 2.75 0 1 1 0 3.916L8.656 7.75Z"/>
+        </svg>
+          <h3 class="text-uppercase fw-lighter fs-3 lh-2 p-1">up 365 days / year</h5>
+            <p class="text-capitalize fw-lighter fs-5 lh-2 p-1"> never cook again! we reylli main dat.our subsckription plans include up to 365 dasy/year coverade.you can also choose to orde more flrxibly if that's your style.</p>
+      </div>
+              
+      <div class="col-lg-3 py-2">
+        <svg class="text-warning" xmlns="http://www.w3.org/2000/svg" width="40" height="40" fill="currentColor" class="bi bi-alarm" viewBox="0 0 16 16">
+           <path d="M8.5 5.5a.5.5 0 0 0-1 0v3.362l-1.429 2.38a.5.5 0 1 0 .858.515l1.5-2.5A.5.5 0 0 0 8.5 9V5.5z"/>
+           <path d="M6.5 0a.5.5 0 0 0 0 1H7v1.07a7.001 7.001 0 0 0-3.273 12.474l-.602.602a.5.5 0 0 0 .707.708l.746-.746A6.97 6.97 0 0 0 8 16a6.97 6.97 0 0 0 3.422-.892l.746.746a.5.5 0 0 0 .707-.708l-.601-.602A7.001 7.001 0 0 0 9 2.07V1h.5a.5.5 0 0 0 0-1h-3zm1.038 3.018a6.093 6.093 0 0 1 .924 0 6 6 0 1 1-.924 0zM0 3.5c0 .753.333 1.429.86 1.887A8.035 8.035 0 0 1 4.387 1.86 2.5 2.5 0 0 0 0 3.5zM13.5 1c-.753 0-1.429.333-1.887.86a8.035 8.035 0 0 1 3.527 3.527A2.5 2.5 0 0 0 13.5 1z"/>
+        </svg>
+          <h5 class="text-uppercase fw-lighter fs-3 lh-2 p-1">read in 20 minutes</h5>
+            <p class="text-capitalize fw-lighter fs-5 lh-2 p-1">you're only twenty minutes away from your delicious and heathu meals delivered right to your home. we work with the best chefs in each town to ensure that you'r 100% happy.</p>
+        </div>
+            
+        <div class="col-lg-3 py-2">
+          <svg class="text-warning" xmlns="http://www.w3.org/2000/svg" width="40" height="40" fill="currentColor" class="bi bi-cloud-rain" viewBox="0 0 16 16">
+            <path d="M4.158 12.025a.5.5 0 0 1 .316.633l-.5 1.5a.5.5 0 0 1-.948-.316l.5-1.5a.5.5 0 0 1 .632-.317zm3 0a.5.5 0 0 1 .316.633l-1 3a.5.5 0 0 1-.948-.316l1-3a.5.5 0 0 1 .632-.317zm3 0a.5.5 0 0 1 .316.633l-.5 1.5a.5.5 0 0 1-.948-.316l.5-1.5a.5.5 0 0 1 .632-.317zm3 0a.5.5 0 0 1 .316.633l-1 3a.5.5 0 1 1-.948-.316l1-3a.5.5 0 0 1 .632-.317zm.247-6.998a5.001 5.001 0 0 0-9.499-1.004A3.5 3.5 0 1 0 3.5 11H13a3 3 0 0 0 .405-5.973zM8.5 2a4 4 0 0 1 3.976 3.555.5.5 0 0 0 .5.445H13a2 2 0 0 1 0 4H3.5a2.5 2.5 0 1 1 .605-4.926.5.5 0 0 0 .596-.329A4.002 4.002 0 0 1 8.5 2z"/>
+          </svg>
+              <h5 class="text-uppercase fw-lighter fs-3 lh-2 p-1">100% organic</h5>
+              <p class="text-capitalize fw-lighter fs-5 lh-2 p-1">all our vegetables are fresh organic and local. animals are raised without added hormones or antibiotics. good for your health the environment and it also tastes better! 
+              </p>
+        </div>
+            
+        <div class="col-lg-3 py-2">
+            <svg class="text-warning"xmlns="http://www.w3.org/2000/svg" width="40" height="40" fill="currentColor" class="bi bi-cart4" viewBox="0 0 16 16">
+              <path d="M0 2.5A.5.5 0 0 1 .5 2H2a.5.5 0 0 1 .485.379L2.89 4H14.5a.5.5 0 0 1 .485.621l-1.5 6A.5.5 0 0 1 13 11H4a.5.5 0 0 1-.485-.379L1.61 3H.5a.5.5 0 0 1-.5-.5zM3.14 5l.5 2H5V5H3.14zM6 5v2h2V5H6zm3 0v2h2V5H9zm3 0v2h1.36l.5-2H12zm1.11 3H12v2h.61l.5-2zM11 8H9v2h2V8zM8 8H6v2h2V8zM5 8H3.89l.5 2H5V8zm0 5a1 1 0 1 0 0 2 1 1 0 0 0 0-2zm-2 1a2 2 0 1 1 4 0 2 2 0 0 1-4 0zm9-1a1 1 0 1 0 0 2 1 1 0 0 0 0-2zm-2 1a2 2 0 1 1 4 0 2 2 0 0 1-4 0z"/>
+            </svg>
+              <h5 class="text-uppercase fw-lighter fs-3 lh-2 p-1">order anything</h5>
+              <p class="text-capitalize fw-lighter fs-5 lh-2 p-1">we dont't limit your creativity which means you can order whateveer you feel like. you can also choose from our menu containing over 100 delicious meals.it's up to you!</p>
+      </div>
+    </div>
+</section>
+
+<section class="container-flex" style="width:100%">
+  <div class="row">
+    <ul class="meal-showcase">
+      <li>
+        <figure class="meal-photo">
+          <img src="https://th.bing.com/th/id/OIP.5-CdMpe4fRfcaVGL8LMH2QHaE8?w=265&h=180&c=7&r=0&o=5&pid=1.7">
+        </figure>
+      </li>
+      <li>
+        <figure class="meal-photo">
+          <img src="https://th.bing.com/th/id/OIP.rt3xolotX090OmYU0QlRLgHaE8?w=265&h=180&c=7&r=0&o=5&pid=1.7">
+        </figure>
+      </li>
+      <li>
+        <figure class="meal-photo">
+          <img src="https://th.bing.com/th/id/OIP.HCk7wayYtfUsI8ExgbJ_bgHaE8?w=265&h=180&c=7&r=0&o=5&pid=1.7">
+        </figure>
+      </li>
+      <li>
+        <figure class="meal-photo">
+          <img src="https://th.bing.com/th/id/OIP._3gyCxknW1z3IdKej_vkXwHaE8?w=265&h=180&c=7&r=0&o=5&pid=1.7">
+        </figure>
+      </li>
+    </ul>
+    <ul class="meal-showcase">
+      <li>
+        <figure class="meal-photo">
+          <img src="https://th.bing.com/th/id/OIP.RqQavRIbshw88qwms2GyHAHaE8?w=265&h=180&c=7&r=0&o=5&pid=1.7">
+        </figure>
+      </li>
+      <li>
+        <figure class="meal-photo">
+          <img src="https://th.bing.com/th/id/OIP.44H5538BLpJbnB3NMRo2ZgHaDF?w=265&h=180&c=7&r=0&o=5&pid=1.7">
+        </figure>
+      </li>
+      <li>
+        <figure class="meal-photo">
+          <img src="https://th.bing.com/th/id/OIP.dMHF2uljWNCfcYoWMPW2EAHaDk?w=265&h=180&c=7&r=0&o=5&pid=1.7">
+        </figure>
+      </li>
+      <li>
+        <figure class="meal-photo">
+          <img src="https://th.bing.com/th/id/OIP.reFafUy33U67xvag3LoxqAHaFj?w=265&h=180&c=7&r=0&o=5&pid=1.7">
+        </figure>
+      </li>
+    </ul>
+</div>        
+</Section>
+
+<section class="container p-5 my-5">
+  <div style="background-color:rgb(252, 252, 252);">
+    <div class="row align-items-center ">
+        <h3 class="text-muted text-uppercase text-center fs-3"> how it works - simple as 1, 2, 3</h3>
+          <p class="-item text-warning text-center p-3">__________________</p>
+                    <div class="col-lg-6 d-flex justify-content-end ">
+                        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRcwAUFDlsfgcag9mptKFVc4huS-yvGmq61FQ&usqp=CAU">
+                    </div>  
+                    <div class="col-lg-6 align-items-center rounded-circle ">
+                      <a href="#" class="fs-3 text-warning">1</a>
+                      <p class="text-capitalize fw-lighter fs-4 lh-2 text-start">choose subsckription plan thet best fits your needs and sign up todey</p>
+                      <a href="#" class="fs-3 text-warning">2</a>
+                      <p class="text-capitalize fw-lighter fs-4 lh-2 text-start">order your delicios meal using our mobile app or websaite. or you can even call us!</p>
+                      <a href="#" class="fs-3 text-warning">3</a>
+                      <p class="text-capitalize fw-lighter fs-4 lh-2 text-start">enjoy your meal after less than 20 minutes. see you tha nexs time!</p>
+                      <img src="https://thumbs.dreamstime.com/b/ikony-sklepu-gry-w-google-do%C5%82%C4%85czony-plik-edytowalny-eps-176751475.jpg" style="width: 150px;">
+                      <img src="https://thumbs.dreamstime.com/b/dost%C3%A4%E2%84%A2pny-na-app-store-apple-iphone-jest-cyfrowym-dystrybucji-platform%C3%A4%E2%80%A6-rozwija%C3%A4%E2%80%A1-i-utrzymuj%C3%A4%E2%80%A6cym-inc-dla-mobilnego-apps-ios-140090958.jpg" style="width: 150px;">
+                    </ul>
+                    </div>
+            </section>       
+<section class="container p-5 my-5">
+    <h3 class="text-muted text-uppercase text-center fs-3">we're cuurently in these cities</h3>
+      <p class="text-warning text-center p-3">__________________</p>
+    <div class="row">
+
+      <div class="col-lg-3">
+        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRNcA3iClBBApf12xpWhfVd01j61c54u0H5Fz93iJfWfoEPNBb5qSKt0QEQfdRM1j-q7sI&usqp=CAU" width="100%" height="70%">
+        <p class="text-uppercase fs-4 lead">lisbon</p>
+        <i class="bi bi-person-fill text-warning"></i>
+        <p class="lead">1600+heapy eaters</p>
+        <i class="bi bi-star-fill text-warning"></i>
+        <p class="lead">60+top shefs</p>
+        <a class="bi bi-twitter text-warning"href="#">@omnifood_lx</a>
+      </div>
+
+      <div class="col-lg-3 ">
+        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRg_fJzdD7EfGQAZ-N60NBeyIMnBr8D-ZW7mZX2L9V8XzWwRgKvPvOBRf58VXuw01YPPdw&usqp=CAU" width="100%" height="70%">
+        <p class="text-uppercase fs-4 lead">san francisko</p>
+        <i class="bi bi-person-fill text-warning"></i>
+        <p class="lead">3700+heapy eaters</p>
+        <i class="bi bi-star-fill text-warning"></i>
+        <p class="lead">120+top shefs</p>
+        <a class="bi bi-twitter text-warning"href="#">@omnifood_lx</a>
+      </div>
+
+      <div class="col-lg-3 ">
+        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT2hjB7QBnfKw_TIQf8_qIf7bktVd4zGbrpYvtBFdVCCveCOPhLhMkvplVmMdtPZyz77wk&usqp=CAU" width="100%" height="70%">
+        <p class="text-uppercase fs-4 lead">berlin</p>
+        <i class="bi bi-person-fill text-warning"></i>
+        <p class="lead">2300+heapy eaters</p>
+        <i class="bi bi-star-fill text-warning lead"></i>
+        <p class="lead">110+top shefs</p>
+        <a class="bi bi-twitter text-warning"href="#">@omnifood_lx</a>
+      </div>
+
+      <div class="col-lg-3 ">
+        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRQCtxqg0luBxHQEg0B4E3x2soLQpf2s_TFeA&usqp=CAU" width="100%" height="70%">
+        <p class="text-uppercase fs-4 lead">london</p>
+        <i class="bi bi-person-fill text-warning"></i>
+        <p class="lead">1200+heapy eaters</p>
+        <i class="bi bi-star-fill text-warning"></i>
+        <p class="lead">50+top shefs</p>
+        <a class="bi bi-twitter text-warning"href="#">@omnifood_lx</a>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="mt-3 p-5 my-5">
+  <div class="img2">
+  <h1 class="text-uppercase fs-3 text-white text-center ">our customers cant't live withoutus</h1>
+  <p class="text-warning text-center">__________________</p>
+
+      <div class="d-flex justify-content-evenly p-5">
+        <div class="row ">
+        <div class="col-lg-4 col align-self-center ">
+            <div class="mx-auto fw-lighter fs-4 lh-2 text-start text-white fst-italic">
+              <h1>&#8220</h1>
+              <p class=""> onmifood is just awesome! ijust lanched a <br>startup which leaves me with no time for <br>coocking , so omnifood is a life-saver. now <br>that got used to it, icouldt't live without <br>mymeals!</p>
+              <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTjOIkaEGQy6hBJtpRVnEREaIEFQQBaeAYYAw&usqp=CAU" class="rounded-circle" style="width: 100px;">
+              <p class="text-white"> Albero Moreira</p>
+
+              </div>
+            </div>
+            
+        <div class="col-lg-4 col align-self-center">
+            <div class="mx-auto fw-lighter fs-4 lh-2 text-start text-white fst-italic">
+              <h1>&#8220</h1>
+              <p class="">onmifood is just awesome! ijust lanched a <br>startup which leaves me with no time for <br>coocking , so omnifood is a life-saver. now <br>that got used to it, icouldt't live without <br>mymeals!</p>
+              <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQwKA4sua6EXsukj_9y0QJ6pxSeAXWufHUSag&usqp=CAU" class="rounded-circle" style="width: 80px;">
+              <p class="text-white"> Martina Lokman</p>
+
+              </div>
+            </div>
+        
+        <div class="col-lg-4 col align-self-center">
+            <div class="mx-auto fw-lighter fs-4 lh-2 text-start text-white fst-italic">
+              <h1>&#8220</h1>
+              <p class="">onmifood is just awesome! ijust lanched a <br>startup which leaves me with no time for <br>coocking , so omnifood is a life-saver. now <br>that got used to it, icouldt't live without <br>mymeals!</p>
+              <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTYRajKaJzy800Qyv965qZHCyKMBlPK7dw_rw&usqp=CAU" class="rounded-circle" style="width: 80px;">
+              <p class="text-white">Ivan Batanic</p>
+
+              </div>
+            </div>
+            </div>
+          </div>
+      </div>
+</section>
+
+
+  <section class="container p-5 mb-5 my-4 text-center ">
+    <h1 class="text-muted text-uppercase text-center fs-3">start eaiting healthy todey</h1>
+    <p class="-item text-warning text-center">__________________</p>
+
+      <div class="row row-cols-1 row-cols-md-3 mb-3 text-start">
+        <div class="col">
+              <div class="card mb-4 raundet-3 shadow-sm">
+                  <div class="card-header py-3">
+                    <h3 class="mu-0 fw-normal text-start text-uppercase">premium</h3>
+                  </div>
+            <div class="card-body">
+                <h1 class="card-title pricin-card-title text-warning text-start">399$
+                  <small class=" fw-light text-warnin">/month</small>
+                  <h6 class="text-capitalize">this's only 13.30 per meal</h6>
+                </h1>
+            <ul class="list umstyled mt-3 mb-4 text-start">
+              <li>1 meal evry day </li>
+              <li>order 14/7</li>
+              <li>access to newest creation</li>
+              <li>free delivering</li>
+            </ul>
+            </div>
+            <div class="card-footer text-center">
+              <a href="#" class="btn btn-ghost">sing up now</a>
+            </div> 
+        </div>
+      </div>
+       
+          <div class="col"> 
+            <div class="card mb-4 raundet-3 shadow-sm">
+              <div class="card-header py-3">
+                <h3 class="mu-0 fw-normal text-start text-uppercase">pro</h3>
+              </div>
+            <div class="card-body">
+              <h1 class="card-title pricin-card-title text-warning text-start">149$
+                <small class=" fw-light text-warnin">/month</small>
+              <h6 class="text-capitalize">this's only 14.90 per meal</h6>
+            </h1>
+            <ul class="list umstyled mt-3 mb-4">
+              <li>1 meal 10 days/mounth </li>
+              <li>order 24/7</li>
+              <li>access to newest creation</li>
+              <li>free delivering</li>
+            </ul>
+            </div>
+            <div class="card-footer text-center">
+              <a href="#" class="btn btn-ghost">sing up now</a>
+            </div> 
+          </div>
+        </div>
+       
+        <div class="col">   
+          <div class="card mb-4 raundet-3 shadow-sm">
+            <div class="card-header py-3">
+              <h3 class="mu-0 fw-normal text-start text-uppercase">starter</h3>
+            </div>
+        <div class="card-body">
+          <h1 class="card-title pricin-card-title text-warning text-start">19$
+            <small class=" fw-light text-warnin">/meal</small>
+          <h6></h6>
+        </h1>
+        <ul class="list umstyled mt-3 mb-5">
+          <li>1 meal</li>
+          <li>order from 8 am to 12 pm </li>
+          <li></li>
+          <li>free delivering</li>
+        </ul>
+        </div>
+        <div class="card-footer text-center">
+          <a href="#" class="btn btn-ghost">sing up now</a>
+              </div>
+            </div> 
+          </div>
+        </div>
+      </div>
+  </section>
+
+  <section class="container p-5 my-5 justify-content-center bg-white col-lg-4">
+    <div class="container my-5" style="background-color: rgb(244, 248, 248); height: 100%;">
+    <div class="row align-items-center">
+
+    <h3 class="text-muted text-uppercase text-center fs-3">we're happy to hear from you</h3>
+    <p class="-item text-warning text-center">__________________</p>
+    <label class="py-3 mb-3 text-center">First Name<input type="text" name="first-name" required></label>
+    <label class="text-center" for="">Your Email <input type="email" name="email" reguard></label>
+    <label class="py-3 mb-3 text-center" >Haw did you about us?
+      <select name="referrer">
+          <option value="">(select one)</option>
+          <option value="1"> friends</option>
+          <option value="2"> fre</option>
+          <option value="3"> freeCodecamp</option>
+          <option value="4"> freeCodecamp</option>
+      </select>
+      <label class="py-3 mb-3 text-center">Newsleter<input type="checkbox" name="terms" class="inline" required/>yes, pliese</label>
+      <textarea name="text" cols="35" rows="3" placeholder="Ilike coding on the beach....">Drop us a line</textarea></label>
+      <div class="text-center" style="height:25px;">
+        <a href="#" class="btn btn-ghost">sing up now</a>
+      </div> 
+      </div>
+  </div>  
+</section>
+
+<footer class="align-self-end" style="background-color: rgb(121, 124, 124);">
+    <ul class="list-unstyled d-flex justify-content-end text-center pt-4">
+      <li class="p-4 mb-5"><a class="link-dark" href="#"><i class="bi bi-twitter"style="width: 20px;"></i></a></li>
+      <li class="p-4 mb-5"><a class="link-dark" href="#"><i class="bi bi-linkedin"style="width: 20px;"></i></a></li>
+      <li class="p-4 mb-5"><a class="link-dark" href="#"><i class="bi bi-facebook"style="width: 20px;"></i></a></li>
+      <li class="p-4 mb-5"><a class="link-dark" href="#"><i class="bi bi-google"style="width: 20px;"></i></a></li>
+    
+      <li class="p-4 mb-5">About us</li>
+      <li class="p-4 mb-5">Blog</li> 
+      <li class="p-4 mb-5">Press</li> 
+      <li class="p-4 mb-5">iOS App</li> 
+      <li class="p-4 mb-5">Android App</li> 
+     </ul> 
+ <p class="d-flex justify-content-center">Copryht © 2022 Company, All rights reserved.</p>
+</footer>   
+</head>
+
+</body>                 
+</html>

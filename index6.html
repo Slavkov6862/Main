@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Form Validation</title>
+    <style>
+        
+    </style>
+</head>
+<body>
+    <form id="employeeDetails"></form>
+        <label>First Name</label>
+        <input type="text" id="firstName"/>
+        <br>
+        <label>Last Name</label>
+        <input type="text" id="lastName"/>
+        <br>
+        <label>Age</label>
+        <input type="number"id="age"/>
+        <br>
+        <label>EmployeetOn</label>
+        <input type="data" id="empoyetOn"/>
+        <br>
+        <button id="sumbitEmployeeDetails"></button>
+        <br>
+        <br>
+        <br>
+        <br>
+    <form id="vehicleDetails"></form>
+        <label>Brand</label>
+        <input type="text" id="Brand"/>
+        <br>
+        <label>Model</label>
+        <input type="text" id="Model"/>
+        <br>
+        <label>Kilometers</label>
+        <input type="number"id="Kilometers"/>
+        <br>
+        <label>EmployeetOn</label>
+        <input type="data" id="empoyetOn"/>
+        <br>
+        <button id="sumbitEmployeeDetails"></button>
+
+        <table id="details"></table>
+
+        <script src="Employee.js"></script>
+        <script src="Vehicle.js"></script>
+
+    <script>
+        document.querySelector('#sumbitEmployeeDetail').addEventListener('clik', function (event) {
+            event.preventDefault();
+            var firstName = document.querySelector('#firstName');
+            var lastName = document.querySelector('#lastName');
+            var age = document.querySelector('#age');
+            var empoyetOn = document.querySelector('#employetOn');
+
+            var empoyee = {
+                firstName: firstName.value,
+                lastName: lastName.value,
+                age: age.value,
+                empoyetOn: empoyetOn.value,
+            };
+        });
+
+        printTable(empoyee);
+
+        function printTable(details){
+            var tr = document.createElement('tr')
+        }
+        
+    </script>
+    
+</body>
+</html>
